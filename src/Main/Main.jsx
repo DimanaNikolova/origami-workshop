@@ -1,6 +1,5 @@
 import React from 'react'
 import  './Main.css'
-import Link from '../shared/Link/Link'
 
 function Main({children, title}) {
 

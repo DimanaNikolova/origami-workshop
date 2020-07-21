@@ -1,6 +1,6 @@
 import React from 'react'
 import './Posts.css'
-import Post from '../Post/Post'
+//import Post from '../Post/Post'
 
 // function Posts({title}) {
 
@@ -59,7 +59,6 @@ export class Posts extends React.Component {
 
 
     render() {
-        const { origamis } = this.state
         return <div className="Posts">
             <h1 className="title">Tova e zaglavie</h1>
             {

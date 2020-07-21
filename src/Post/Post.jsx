@@ -1,6 +1,5 @@
 import React from 'react'
 import './Post.css'
-import Link from '../shared/Link/Link'
 
 function Post({ imageUrl, imageAlt, children, author }) {
 
