@@ -1,14 +1,15 @@
 import React from 'react'
-import  './Link.css'
+import './Link.css'
+import { Link } from 'react-router-dom'
 
-function Link({children, url}) {
+function LinkComponent({ children, url }) {
 
- return <li className="listItem">
-      <a href={url}>
-    {children}
-      </a>
+  return <li className="listItem">
+    <Link to={url}>
+      {children}
+    </Link>
   </li>
-  
+
 }
 
-export default Link
+export default LinkComponent

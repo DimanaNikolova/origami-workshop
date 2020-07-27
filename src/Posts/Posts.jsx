@@ -22,12 +22,12 @@ export class Posts extends React.Component {
     }
 
     getOrigamis() {
-        fetch('http://localhost:9999/api/origami')
+        const {length} = this.props
+        fetch(`http://localhost:9999/api/origami?length=${length}`)
             .then(res => {
                 return res.json()
             }).then(origamis => {
                 this.setState({ origamis })
-                console.log(origamis);
             })
     }
 
@@ -40,7 +40,7 @@ export class Posts extends React.Component {
 
         return origamis.map((origami, index) => {
             return (
-                <div className="Post">
+                <div className="Post" key={index}>
                     <img src='blue-origami-bird.png' alt="origami" />
                     <p key={origami._id} className="description">
                        {index+1}: {origami.description}
@@ -62,7 +62,7 @@ export class Posts extends React.Component {
         return <div className="Posts">
             <h1 className="title">Tova e zaglavie</h1>
             {
-                this.renderOrigamis()
+                this.renderOrigamis(this.props.length)
             }
 
         </div>
