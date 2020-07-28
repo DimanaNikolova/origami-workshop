@@ -6,18 +6,27 @@ import Posts from '../../Posts/Posts'
 import Main from '../../Main/Main'
 import Footer from '../../Footer/Footer'
 
+// function HomePage() {
+//   return (
+//     <div className="App">
+//       <div className='Container'>
+//       <Navigation />
+//           <Aside />
+//         <Main>
+//           <Posts  />
+//         </Main>
+//       <Footer />
+//       </div>
+//     </div>
+//   );
+// }
 function HomePage() {
   return (
-    <div className="App">
-      <div className='Container'>
-      <Navigation />
-          <Aside />
+    
         <Main>
           <Posts  />
         </Main>
-      <Footer />
-      </div>
-    </div>
+    
   );
 }
 

@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-import Navigation from '../../Navigation/Navigation'
-import Aside from '../../Aside/Aside'
 import Main from '../../Main/Main'
-import Footer from '../../Footer/Footer'
 import Input from '../../shared/Input/Input'
 import './register.css';
 
@@ -25,10 +22,7 @@ class RegisterPage extends React.Component {
     render() {
         const { email, password, rePassword } = this.state
         return (
-            <div className="App">
-                <div className='Container'>
-                    <Navigation />
-                    <Aside />
+           
                     <Main>
                         <div className="Register">
                             <h1>Register Page</h1>
@@ -59,9 +53,7 @@ class RegisterPage extends React.Component {
                             </form>
                         </div>
                     </Main>
-                    <Footer />
-                </div>
-            </div>
+               
         );
 
     }
