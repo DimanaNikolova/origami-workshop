@@ -1,0 +1,12 @@
+.form-control {
+    width: 30%;
+    margin: 0 auto;
+    padding: 1%;
+    text-align: center;
+}
+
+label {
+    float: left;
+    width: 30%;
+    text-align: right;
+}
