@@ -13,7 +13,6 @@ export default class ProfilePage extends Component {
         }
     }
     componentDidMount() {
-        console.log(this.props.match.params.userId);
         this.getUser(this.props.match.params.userId)
     }
 
@@ -25,7 +24,6 @@ export default class ProfilePage extends Component {
                 }
                 return res.json()
             }).then(user => {
-                console.log(user.username)
                 this.setState({ username: user.username, posts: user.posts && user.posts.length })
             })
     }

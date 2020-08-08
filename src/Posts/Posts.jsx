@@ -48,7 +48,7 @@ export class Posts extends React.Component {
                     <div>
                     <span>
                         <small>Author: </small>
-                        {origami.author.username}
+                        {origami.author ? origami.author.username : "Nqmaeeeeeee"}
                     </span>
                     </div>
                 </div>

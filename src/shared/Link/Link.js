@@ -2,10 +2,10 @@ import React from 'react'
 import './Link.css'
 import { Link } from 'react-router-dom'
 
-function LinkComponent({ children, url }) {
+function LinkComponent({ children, url, onClick }) {
 
   return <li className="listItem">
-    <Link to={url}>
+    <Link onClick={onClick} to={url}>
       {children}
     </Link>
   </li>

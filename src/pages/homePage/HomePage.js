@@ -1,33 +1,20 @@
 import React from 'react';
 import './HomePage.css';
-import Navigation from '../../Navigation/Navigation'
-import Aside from '../../Aside/Aside'
 import Posts from '../../Posts/Posts'
 import Main from '../../Main/Main'
-import Footer from '../../Footer/Footer'
+import UserContext from '../../Context'
 
-// function HomePage() {
-//   return (
-//     <div className="App">
-//       <div className='Container'>
-//       <Navigation />
-//           <Aside />
-//         <Main>
-//           <Posts  />
-//         </Main>
-//       <Footer />
-//       </div>
-//     </div>
-//   );
-// }
-function HomePage() {
-  return (
-    
-        <Main>
-          <Posts  />
-        </Main>
-    
-  );
+class HomePage extends React.Component {
+  static contextType = UserContext
+
+  render(){
+    return (
+          <Main>
+            <Posts  />
+          </Main>   
+    );
+
+  }
 }
 
 export default HomePage;
